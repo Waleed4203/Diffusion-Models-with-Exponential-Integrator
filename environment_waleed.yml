@@ -1,0 +1,35 @@
+name: deis39
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - blas=1.0=mkl
+  - scipy=1.13.1
+  - pip:
+      - absl-py==2.3.1
+      - chex==0.1.90
+      - flax==0.8.5
+      - jax==0.4.30
+      - jaxlib==0.4.30
+      - keras==2.13.1
+      - ml-collections==0.1.1
+      - msgpack==1.1.2
+      - numpy==1.24.3
+      - opt-einsum==3.4.0
+      - optax==0.2.4
+      - orbax-checkpoint==0.6.4
+      - protobuf==3.20.3
+      - setuptools==69.5.1
+      - six==1.17.0
+      - tensorboard==2.13.0
+      - tensorflow==2.13.0
+      - tensorflow-datasets==4.8.3
+      - tensorflow-estimator==2.13.0
+      - tensorflow-gan==2.0.0
+      - tensorflow-hub==0.16.1
+      - tensorflow-intel==2.13.0
+      - tensorflow-io-gcs-filesystem==0.31.0
+      - tensorflow-metadata==1.17.3
+      - tensorflow-probability==0.21.0
+      - typing-extensions==4.5.0
+      - wrapt==2.1.2

@@ -1,0 +1,46 @@
+# DEIS Project - Windows Compatible Requirements
+# Python 3.9 required (via conda)
+# Install JAX first via conda: conda install -c pkgs/main jaxlib=0.4.23 jax -y
+# Then: pip install -r requirements_waleed.txt
+
+# Core JAX ecosystem
+jax==0.4.30
+jaxlib==0.4.30
+flax==0.8.5
+optax==0.2.4
+chex==0.1.90
+orbax-checkpoint==0.6.4
+
+# TensorFlow stack (2.13 = last version with tf.estimator)
+tensorflow==2.13.0
+tensorflow-intel==2.13.0
+tensorflow-estimator==2.13.0
+tensorflow-gan==2.0.0
+tensorflow-datasets==4.8.3
+tensorflow-hub==0.16.1
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-metadata==1.17.3
+tensorflow-probability==0.21.0
+tensorboard==2.13.0
+tensorboard-data-server==0.7.2
+keras==2.13.1
+tf-keras==2.15.0
+
+# Compatibility fixes (DO NOT upgrade these)
+protobuf==3.20.3
+setuptools==69.5.1
+typing-extensions==4.5.0
+
+# Config and utilities
+ml-collections==0.1.1
+absl-py==2.3.1
+
+# Numerics
+numpy==1.24.3
+scipy==1.13.1
+opt-einsum==3.4.0
+
+# Misc
+six==1.17.0
+wrapt==2.1.2
+msgpack==1.1.2
