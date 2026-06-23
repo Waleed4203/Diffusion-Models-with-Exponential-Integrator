@@ -145,6 +145,7 @@ class Runner(object):
                     model.train()
 
                 if step % 5000 == 0:
+                    os.makedirs(self.args.train_path, exist_ok=True)
                     train_state = [model.state_dict(), optim.state_dict(), epoch, step]
                     th.save(train_state, os.path.join(self.args.train_path, 'train.ckpt'))
                     if ema is not None:
